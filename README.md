@@ -1,2 +1,3 @@
 # cerbere
-test phine
+
+nouvelle version de l'app avec pyqt5
