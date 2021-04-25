@@ -48,17 +48,17 @@ send_button.pack()
 top.protocol("WM_DELETE_WINDOW", on_closing)
 
 
-serveur_tchat = "'chat.cerbere-apps.com'"
+serveur_tchat = "chat.cerbere-apps.com" #78.192.207.7
 
 
-HOST = input('Adresse serveur \n ' "si aucune adresse =  " + serveur_tchat + " = adresse serveur cerbere utilisée de base")
+HOST = serveur_tchat #serveur_tchat #input('Adresse serveur \n ' "si aucune adresse =  " + serveur_tchat + " = adresse serveur cerbere utilisée de base")
 
 if not HOST:
 	HOST = serveur_tchat
-else:
-    HOST = int(HOST)
+#else:
+#    HOST = int(HOST)
 	
-PORT = input('Port serveur (base 33000 \n si différend entrez le port) : ')
+PORT = 33000 #input('Port serveur (base 33000 \n si différend entrez le port) : ')
 if not PORT:
     PORT = 33000
 else:
