@@ -173,4 +173,11 @@ class Port_scan(object):
             pdf.ln(th)
             
 
-        pdf.output(os.getenv('HOME') + '/tuto1.pdf', 'F')
+        pdf.output(os.getenv('HOME') + '/rapport.pdf', 'F')
+
+    def saveAsJson(self):
+        save_path = os.getenv('HOME') + '/rapport_json.json'
+        with open(save_path, 'w') as outfile:
+            json.dump(self.scan_data, outfile, indent=4)
+
+
