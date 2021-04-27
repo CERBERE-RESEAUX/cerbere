@@ -19,6 +19,7 @@ pip install tkinter
 pip install pyqt5
 pip install nmap
 pip install scapy
+pip install FPDF
 ```
 ## Launch
 Linux, Windows : ```python _main.py```
